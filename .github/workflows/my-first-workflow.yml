@@ -39,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run test
+      - name: Run tests
         run: npm test
 
       - name: Print a message
