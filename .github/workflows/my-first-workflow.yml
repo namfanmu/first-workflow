@@ -17,8 +17,8 @@ on:
       - main
 
   # Scheduled trigger at 5:00 AM UTC, Monday through Friday
-  schedule:
-    - cron: '0 5 * * 1-5'
+  # schedule:
+  #   - cron: '0 5 * * 1-5'
 
 # Jobs defined in the workflow
 jobs:
@@ -38,6 +38,9 @@ jobs:
 
       - name: Install dependencies
         run: npm i
+
+      - name: Run tests
+        run: npm test
 
       - name: Print a message
         run: echo "Hello, world!"
